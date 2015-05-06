@@ -2,6 +2,9 @@
 
 Made with my mentor at [Bloc](http://bloc.io).
 
+Heroku name: gisle-bloccit
+URL: https://gisle-bloccit.herokuapp.com/
+
 == README
 
 This README would normally document whatever steps are necessary to get the

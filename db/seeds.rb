@@ -10,19 +10,19 @@ require 'faker'
  
  # Create Posts
  50.times do
-   Post.create!(
+   Post.where(
      title:  Faker::Lorem.sentence,
      body:   Faker::Lorem.paragraph
-   )
+     ).first_or_create
  end
  posts = Post.all
  
  # Create Comments
  100.times do
-   Comment.create!(
+   Comment.where(
      post: posts.sample,
      body: Faker::Lorem.paragraph
-   )
+     ).first_or_create
  end
  
  puts "Seed finished"

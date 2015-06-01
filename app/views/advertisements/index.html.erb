@@ -1,0 +1,11 @@
+<h1>Advertisements#index</h1>
+<% @advertisements.each do |advertisement| %>
+<%= div_for advertisment do %>
+    <h1><%= advertisment.title %></h1>
+    <h3><%= advertisment.copy %></h3>
+    <strong><%= advertisment.price %></strong>
+    <%
+  end
+end
+%>
+
